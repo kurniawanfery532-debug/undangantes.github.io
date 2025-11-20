@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Pernikahan Dudi 💍 Gelenyu</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      overflow-x: hidden;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      margin-bottom: 5px;
+      color: #b91c1c;
+      animation: fadeInDown 2s ease;
+    }
+
+    h3 {
+      font-weight: 400;
+      color: #555;
+      animation: fadeInUp 2s ease;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .couple {
+      margin: 40px auto;
+    }
+
+    .photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.5s ease;
+    }
+
+    .photo:hover {
+      transform: scale(1.1);
+    }
+
+    .names {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2em;
+      color: #9d174d;
+      margin-top: 10px;
+      animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .details {
+      background-color: rgba(255, 255, 255, 0.85);
+      margin: 40px auto;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+
+    .details h2 {
+      color: #9d174d;
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+
+    .details p {
+      font-size: 1.1em;
+      color: #444;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: rgba(255,255,255,0.8);
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    }
+
+    .love {
+      font-size: 1.5em;
+      animation: pulse 1.5s infinite;
+      color: #dc2626;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Musik Otomatis -->
+  <audio id="music" autoplay loop muted>
+    <source src="https://cdn.pixabay.com/download/audio/2022/07/25/audio_b7cbca5e43.mp3?filename=happy-dance-party-116199.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    const music = document.getElementById("music");
+    window.addEventListener('DOMContentLoaded', () => {
+      music.muted = false;
+      music.play().catch(() => {
+        console.log("Klik layar sekali agar musik nyala 🎵");
+      });
+    });
+  </script>
+
+  <header>
+    <h1>Undangan Pernikahan</h1>
+    <h3>Dudi 💖 Gelenyu</h3>
+  </header>
+
+  <section class="couple">
+    <img src="dudi.jpg" alt="Dudi" class="photo">
+    <div class="names">Dudi</div>
+    <p>Putra dari Keluarga Harmonis Bandung</p>
+
+    <img src="gelenyu.jpg" alt="Gelenyu" class="photo">
+    <div class="names">Gelenyu</div>
+    <p>Putri dari Keluarga Bahagia Baleendah</p>
+  </section>
+
+  <section class="details">
+    <h2>Acara Bahagia Kami</h2>
+    <p><strong>Tanggal:</strong> 10/32/1925</p>
+    <p><strong>Waktu:</strong> 99.99 - Selesai</p>
+    <p><strong>Tempat:</strong> Kampus Baleendah</p>
+    <p>Dengan penuh cinta, kami mengundang Anda untuk hadir dan memberikan doa terbaik bagi kami berdua.</p>
+  </section>
+
+  <footer>
+    <p class="love">💗 Terima kasih atas doa & kehadirannya 💗</p>
+  </footer>
+</body>
+</html>
